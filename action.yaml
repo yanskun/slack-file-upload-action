@@ -1,0 +1,15 @@
+name: "Label new pull requests Try"
+description: "Add a label when a new PR is opened Try."
+author: "eno-conan"
+
+inputs:
+  token:
+    description: Slack Bot Token
+    required: true
+  path:
+    description: file path
+    required: true
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
