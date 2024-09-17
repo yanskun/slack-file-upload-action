@@ -1,6 +1,9 @@
-name: "Label new pull requests Try"
-description: "Add a label when a new PR is opened Try."
-author: "eno-conan"
+name: 'yanskun/slack-file-upload-action'
+description: "GitHub Action for uploading a file to Slack"
+author: "yanskun"
+branding:
+  icon: file
+  color: orange
 
 inputs:
   token:
