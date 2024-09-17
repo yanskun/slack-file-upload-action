@@ -20,3 +20,5 @@ Inspired by https://github.com/adrey/slack-file-upload-action
     # Slack Channel ID fo upload
     channel_id: ''
 ```
+
+[Sample](https://github.com/yanskun/slack-file-upload-action/blob/main/.github/workflows/sample.yaml)
