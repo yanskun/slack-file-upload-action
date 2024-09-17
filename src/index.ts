@@ -10,6 +10,12 @@ if (!path) {
   setFailed("No filename provided!");
 }
 
+const channelId = getInput("channel_id");
+
+if (!channelId) {
+  setFailed("No channel ID provided!");
+}
+
 const filename = path.split("/").at(-1) ?? path;
 
 function postFile() {
@@ -38,7 +44,7 @@ async function uploadFile(fileId: string) {
           title: filename,
         },
       ],
-      channel_id: "CV2RB3ZDJ",
+      channel_id: channelId,
     });
   } catch {
     setFailed("Error uploading file");
